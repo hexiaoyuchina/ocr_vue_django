@@ -1,7 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5865465-fb9f-4147-b720-be9ea3ac8572" name="Default Changelist" comment="" />
+    <list default="true" id="c5865465-fb9f-4147-b720-be9ea3ac8572" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ocr_django.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/views/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/views/recognize_img.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crnn/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crnn/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crnn/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crnn/data/demo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crnn/dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crnn/demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crnn/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crnn/models/crnn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crnn/recoginze_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crnn/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crnn/test/test_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crnn/tool/convert_t7.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crnn/tool/convert_t7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crnn/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crnn/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/demo/006.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/demo/007.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/demo/008.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/demo/009.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/demo/010.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/readme/demo_split.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/readme/gt_img_859.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/readme/img_859.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res/006.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res/006.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res/007.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res/007.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res/008.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res/008.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res/009.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res/009.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res/010.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res/010.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res_oriented/006.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res_oriented/006.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res_oriented/007.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res_oriented/007.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res_oriented/008.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res_oriented/008.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res_oriented/009.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res_oriented/009.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res_oriented/010.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/data/res_oriented/010.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/detect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/main/demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/main/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/nets/model_train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/nets/vgg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/bbox/.fuse_hidden0000c4ff00000003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/bbox/bbox.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/bbox/bbox.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/bbox/bbox_transform.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/bbox/make.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/bbox/nms.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/bbox/nms.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/bbox/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/dataset/data_provider.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/dataset/data_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/prepare/split_label.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/prepare/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/rpn_msr/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/rpn_msr/anchor_target_layer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/rpn_msr/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/rpn_msr/generate_anchors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/rpn_msr/proposal_layer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/text_connector/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/text_connector/detectors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/text_connector/other.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/text_connector/text_connect_cfg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/text_connector/text_proposal_connector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/text_connector/text_proposal_connector_oriented.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctpn/utils/text_connector/text_proposal_graph_builder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/image/006.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/font/simhei.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_django/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_django/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_django/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_django/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_django/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orm/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orm/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/RegcongizeService.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/__init__.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +120,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="2Eh3S3EK0zZfV40h6iPbjVH1hpw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,6 +133,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -74,7 +182,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663033985071</updated>
-      <workItem from="1663033987421" duration="10741000" />
+      <workItem from="1663033987421" duration="11267000" />
     </task>
     <servers />
   </component>
