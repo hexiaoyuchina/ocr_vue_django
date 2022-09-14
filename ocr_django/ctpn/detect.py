@@ -12,7 +12,7 @@ from ctpn.nets import model_train as model
 from ctpn.utils.rpn_msr.proposal_layer import proposal_layer
 from ctpn.utils.text_connector.detectors import TextDetector
 
-import config
+from config import config
 img_path = config.img_path
 corp_image_path = config.corp_image_path
 gpu = config.gpu

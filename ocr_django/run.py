@@ -7,7 +7,7 @@ from crnn import utils
 from crnn import dataset
 from PIL import Image, ImageFont, ImageDraw
 import crnn.models.crnn as crnn
-import config
+from config import config
 
 crnn_model_path = config.reg_model
 corp_images_dir = config.corp_image_path
