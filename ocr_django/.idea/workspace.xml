@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5865465-fb9f-4147-b720-be9ea3ac8572" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ocr_django/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_django/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/corp_image/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/line_image/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views/recognize_img.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/recognize_img.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctpn/detect.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctpn/detect.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,15 +39,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/corp_image" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Learn\人工智障\code\ocr_project\ocr_django\config" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Learn\人工智障\code\ocr_project\ocr_django\api\views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Learn\人工智障\code\ocr_project\ocr_django\data\corp_image" />
+      <recent name="D:\Learn\人工智障\code\ocr_project\ocr_django\config" />
     </key>
   </component>
   <component name="RunManager">
@@ -82,7 +88,8 @@
       <option name="presentableId" value="Default" />
       <updated>1663033985071</updated>
       <workItem from="1663033987421" duration="12253000" />
-      <workItem from="1663123600744" duration="9028000" />
+      <workItem from="1663123600744" duration="9135000" />
+      <workItem from="1663209491494" duration="1841000" />
     </task>
     <task id="LOCAL-00001" summary="全局">
       <created>1663125985087</created>
@@ -91,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663125985087</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="全局">
+      <created>1663152623036</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663152623037</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,10 +116,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="全局" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="412" y="1080" key="CommitChangelistDialog2" timestamp="1663125982201">
+    <state x="412" y="1080" key="CommitChangelistDialog2" timestamp="1663152621303">
       <screen x="200" y="1080" width="1366" height="738" />
     </state>
-    <state x="412" y="1080" key="CommitChangelistDialog2/200.1080.1366.738/0.0.1920.1050@200.1080.1366.738" timestamp="1663125982201" />
+    <state x="412" y="1080" key="CommitChangelistDialog2/200.1080.1366.738/0.0.1920.1050@200.1080.1366.738" timestamp="1663152621303" />
     <state x="689" y="223" key="FileChooserDialogImpl" timestamp="1663037441732">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -158,9 +172,13 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="345" y="83" key="SettingsEditor/200.1080.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1663037459961" />
-    <state x="375" y="1103" key="Vcs.Push.Dialog.v2" timestamp="1663125990868">
+    <state x="375" y="1103" key="Vcs.Push.Dialog.v2" timestamp="1663152624751">
       <screen x="200" y="1080" width="1366" height="738" />
     </state>
-    <state x="375" y="1103" key="Vcs.Push.Dialog.v2/200.1080.1366.738/0.0.1920.1050@200.1080.1366.738" timestamp="1663125990868" />
+    <state x="375" y="1103" key="Vcs.Push.Dialog.v2/200.1080.1366.738/0.0.1920.1050@200.1080.1366.738" timestamp="1663152624751" />
+    <state x="574" y="198" width="771" height="654" key="find.popup" timestamp="1663210832708">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="574" y="198" width="771" height="654" key="find.popup/200.1080.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1663210832708" />
   </component>
 </project>

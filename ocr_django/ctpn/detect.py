@@ -54,7 +54,6 @@ def get_real_bbox(box, rh, rw):
     real_index = []
     for index in range(0, 8, 2):
         x, y = box[index:index + 2]
-        print(x, y)
         x /= rh
         y /= rw
         real_index.append(str(int(x)))
