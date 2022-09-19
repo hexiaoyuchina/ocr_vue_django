@@ -14,7 +14,8 @@ class RegeViewSets(viewsets.GenericViewSet):
     @api_serializer_deco('识别')
     def reg_image(self, request, serializer_data=None):
 
-        image_file = serializer_data.get('file',None)
+        # image_file = serializer_data.get('file',None)
+        image_file = image_file = request.FILES.get("file", None)
         if image_file:
             _,ext = os.path.splitext(image_file.name)
             if not ext or ext not in ['.jpg', '.JPG', '.png', '.PNG']:
