@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from service.operation.RegcongizeService import RegcongizeService
 from service.resource.RegcongizeResource import RegcongizeResource
 from api.api_serializers import api_serializer_deco
-from api.api_serializers.RegImage.RegimageSerializer import ShowImageSerializer
+from api.api_serializers.RegimageSerializer import ShowImageSerializer
 import uuid
 
 class RegeViewSets(viewsets.GenericViewSet):

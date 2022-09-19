@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5865465-fb9f-4147-b720-be9ea3ac8572" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/api_serializers/RegImage/RegimageSerializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/api_serializers/RegImage/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/api_serializers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/api_serializers/api_serializer_deco.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/operation/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/resource/RegcongizeResource.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/resource/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api_serializers/RegImage/RegimageSerializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_serializers/RegimageSerializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api_serializers/RegImage/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api_serializers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_serializers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api_serializers/api_serializer_deco.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api/views/recognize_img.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/recognize_img.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/RegcongizeService.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/operation/RegcongizeService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ocr_fronted/src/service/reg_service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ocr_fronted/src/service/reg_service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ocr_fronted/src/store/modules/reg_image.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ocr_fronted/src/store/modules/reg_image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ocr_fronted/src/views/reg_img/upload_img.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../ocr_fronted/src/views/reg_img/upload_img.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +94,7 @@
       <workItem from="1663123600744" duration="9135000" />
       <workItem from="1663209491494" duration="5093000" />
       <workItem from="1663310639679" duration="2977000" />
-      <workItem from="1663557660443" duration="8708000" />
+      <workItem from="1663557660443" duration="9034000" />
     </task>
     <task id="LOCAL-00001" summary="全局">
       <created>1663125985087</created>
@@ -166,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663570191857</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="架构优化">
+      <created>1663572446064</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663572446064</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,13 +177,15 @@
     <MESSAGE value="保存图片" />
     <MESSAGE value="优化识别" />
     <MESSAGE value="bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug" />
+    <MESSAGE value="架构优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="架构优化" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="288" y="0" key="CommitChangelistDialog2" timestamp="1663570190762">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state x="402" y="1080" key="CommitChangelistDialog2" timestamp="1663572438004">
+      <screen x="200" y="1080" width="1304" height="768" />
     </state>
     <state x="288" y="0" key="CommitChangelistDialog2/200.1080.1304.768/0.0.1858.1080@0.0.1858.1080" timestamp="1663570190762" />
+    <state x="402" y="1080" key="CommitChangelistDialog2/200.1080.1304.768/0.0.1858.1080@200.1080.1304.768" timestamp="1663572438004" />
     <state x="298" y="0" key="CommitChangelistDialog2/200.1080.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1663211450737" />
     <state x="412" y="1080" key="CommitChangelistDialog2/200.1080.1366.738/0.0.1920.1050@200.1080.1366.738" timestamp="1663152621303" />
     <state x="689" y="223" key="FileChooserDialogImpl" timestamp="1663037441732">
