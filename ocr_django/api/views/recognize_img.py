@@ -6,15 +6,15 @@ from rest_framework.response import Response
 from service.operation.RegcongizeService import RegcongizeService
 from service.resource.RegcongizeResource import RegcongizeResource
 from api.api_serializers import api_serializer_deco
-from api.api_serializers.RegimageSerializer import ShowImageSerializer
+from api.api_serializers.RegimageSerializer import ShowImageSerializer, RegImageSerializer
 import uuid
 
 class RegeViewSets(viewsets.GenericViewSet):
-    @action(methods=['POST'], detail=False, url_path='reg_image')
+    @action(methods=['POST'], detail=False, url_path='reg_image', serializer_class=RegImageSerializer)
     @api_serializer_deco('识别')
     def reg_image(self, request, serializer_data=None):
 
-        image_file = request.FILES.get("file", None)
+        image_file = serializer_data.get('file',None)
         if image_file:
             _,ext = os.path.splitext(image_file.name)
             if not ext or ext not in ['.jpg', '.JPG', '.png', '.PNG']:
@@ -46,7 +46,7 @@ class RegeViewSets(viewsets.GenericViewSet):
     @action(methods=['POST'], detail=False, url_path='show_res', serializer_class=ShowImageSerializer )
     @api_serializer_deco('获取识别结果')
     def show_res(self, request,  serializer_data=None):
-        resourece = RegcongizeResource(serializer_data.get('file_id'))
+        resourece = RegcongizeResource(serializer_data.get('file_uuid'))
         return resourece.get_res_image()
 
 

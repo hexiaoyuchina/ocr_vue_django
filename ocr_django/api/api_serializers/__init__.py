@@ -6,6 +6,7 @@ from django.conf import settings
 from rest_framework.response import Response
 logger = logging.getLogger(__name__)
 
+
 def api_serializer_deco(api_msg):
 
     def _wrapper(func):
