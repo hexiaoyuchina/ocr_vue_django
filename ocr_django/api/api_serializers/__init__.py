@@ -32,11 +32,18 @@ def api_serializer_deco(api_msg):
 
                 translation.activate(language)
 
+                req_dict = {
+                    "GET": req.GET.dict(),
+                    "POST": req.data,
+                    "PUT": req.data,
+                    "DELETE": req.data
+                }
+                obj_serializer = None
+                if obj.serializer_class:
+                    obj_serializer = obj.get_serializer(data=req_dict.get(req.method))
 
-                obj_serializer = obj.get_serializer(data=req.data)
-
-                if not obj_serializer.is_valid() and req.method.lower() == "get":
-                    obj_serializer = obj.get_serializer(data=req.GET)
+                # if not obj_serializer.is_valid() and req.method.lower() == "get":
+                #     obj_serializer = obj.get_serializer(data=req.GET)
 
                 if obj_serializer.is_valid():
                     serializer_data = obj_serializer.data

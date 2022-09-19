@@ -12,7 +12,7 @@ import uuid
 class RegeViewSets(viewsets.GenericViewSet):
     @action(methods=['POST'], detail=False, url_path='reg_image')
     @api_serializer_deco('识别')
-    def reg_image(self, request, *args, **kwargs):
+    def reg_image(self, request, serializer_data=None):
 
         image_file = request.FILES.get("file", None)
         if image_file:
