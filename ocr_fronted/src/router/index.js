@@ -7,8 +7,12 @@ import regImageRoutes from './reg'
 Vue.use(Router )
 // 2.定义路由活导入，路由与组建进行映射
 const routes = [
-    regImageRoutes
-]
+    regImageRoutes,
+    {
+      path:'/',
+      redirect:'/reg'
+    }
+  ]
 //3.创建路由实例并导出
 const router =  new Router({
   routes,
