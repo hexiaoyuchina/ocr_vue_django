@@ -1,5 +1,7 @@
 const reg_img_state ={
-    state:{},
+    state:{
+        file_uuid:''
+    },
     mutations:{},
     actions:{},
     getters:{}

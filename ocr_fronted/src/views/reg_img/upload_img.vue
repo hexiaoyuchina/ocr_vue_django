@@ -55,8 +55,9 @@ export default {
       // 发起请求
       httpServer.upload_img(true,formData).then(res=>{
 
-        console.log(res)
-        // this.$router.push('reg/show')
+        console.log(res.file_uuid)
+        this.$store.reg_img_state.file_uuid = res.file_uuid
+        this.$router.push('reg/show')
       })
     }
   },

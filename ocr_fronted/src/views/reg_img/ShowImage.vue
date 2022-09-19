@@ -5,9 +5,15 @@
   </template>
   
   <script>
-  export default {
-    name: 'showImage'
-  }
+    import httpServer from '@/service/reg_service'
+    export default {
+      name: 'showImage',
+      mounted(){
+        httpServer.showImage(true, this.$store.reg_img_state.file_uuid).then((res)=>{
+          console.log(res);
+        })
+      }
+    }
   </script>
 
   

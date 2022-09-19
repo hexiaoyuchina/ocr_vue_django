@@ -3,11 +3,15 @@ import os
 from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from service.RegcongizeService import RegcongizeService
+from service.operation.RegcongizeService import RegcongizeService
+from service.resource.RegcongizeResource import RegcongizeResource
+from api.api_serializers import api_serializer_deco
+from api.api_serializers.RegImage.RegimageSerializer import ShowImageSerializer
 import uuid
 
 class RegeViewSets(viewsets.GenericViewSet):
     @action(methods=['POST'], detail=False, url_path='reg_image')
+    @api_serializer_deco('识别')
     def reg_image(self, request, *args, **kwargs):
 
         image_file = request.FILES.get("file", None)
@@ -37,6 +41,12 @@ class RegeViewSets(viewsets.GenericViewSet):
             res.update({'file_uuid': uuids})
             # image_data = open(imagepath, "rb").read()
             # return HttpResponse(image_data, content_type="image/png")
+        return res
+
+    @action(methods=['POST'], detail=False, url_path='show_res', serializer_class=ShowImageSerializer )
+    @api_serializer_deco('获取识别结果')
+    def show_res(self, request,  serializer_data=None):
+        resourece = RegcongizeResource(serializer_data.get('file_id'))
+        return resourece.get_res_image()
 
 
-        return Response(res)
