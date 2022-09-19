@@ -13,10 +13,9 @@ from ctpn.utils.rpn_msr.proposal_layer import proposal_layer
 from ctpn.utils.text_connector.detectors import TextDetector
 
 from config import config
-corp_image_path = config.corp_image_path
+
 gpu = config.gpu
 checkpoint_path = config.checkpoint_path
-write_line_path = config.write_line_path
 
 # def get_image_path(image_dir):
 #     files = []

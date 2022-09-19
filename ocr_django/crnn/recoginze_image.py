@@ -10,8 +10,7 @@ import crnn.models.crnn as crnn
 from config import config
 
 crnn_model_path = config.reg_model
-corp_images_dir = config.corp_image_path
-line_image_dir = config.write_line_path
+
 
 
 def get_image_path(image_dir):
@@ -85,4 +84,4 @@ def recognition(file_path):
             f.write(sim_pred)
 
     detect_reg_text.close()
-    line_image.save(os.path.join(line_image_dir, 'detect_reg.jpg'))
+    line_image.save(os.path.join(os.path.dirname(file_path), 'detect_reg.jpg'))
