@@ -56,7 +56,7 @@ export default {
       httpServer.upload_img(true,formData).then(res=>{
 
         console.log(res)
-        this.$router.push('reg/show')
+        // this.$router.push('reg/show')
       })
     }
   },
