@@ -26,7 +26,7 @@ def get_image_path(image_dir):
     print('Find {} images'.format(len(files)))
     return files
 
-def recognition():
+def recognition(file_path):
     alphabet = '0123456789abcdefghijklmnopqrstuvwxyz'
 
     model = crnn.CRNN(32, 1, 37, 256)
@@ -38,10 +38,17 @@ def recognition():
     converter = utils.strLabelConverter(alphabet)
 
     transformer = dataset.resizeNormalize((100, 32))
+
+    corp_images_dir =os.path.join(os.path.dirname(file_path), 'corp_image')
     corp_image_paths = get_image_path(corp_images_dir)
-    line_image_path = get_image_path(line_image_dir)[0]
+
+    line_image_path = os.path.join(os.path.dirname(file_path), 'detect.jpg')
+
     line_image = Image.open(line_image_path)
     draw = ImageDraw.Draw(line_image)
+
+    detect_reg_text = open(os.path.join(os.path.dirname(file_path), 'detect_reg.txt'), 'w')
+    # 整张图片每一个小图进行识别
     for corp_image_path in corp_image_paths:
         image = Image.open(corp_image_path).convert('L')
         image = transformer(image)
@@ -63,15 +70,19 @@ def recognition():
 
         with open(os.path.join(corp_images_dir, os.path.splitext(os.path.basename(corp_image_path))[0]) + ".txt",
              "r") as f:
-            boxes = f.read().split(',')
+            boxes_text = f.read().replace('\r\n')
+            boxes = boxes_text.split(',')
             left = int(boxes[0])
             top = int(boxes[1])
+
         # # 字体的格式 这里的SimHei.ttf需要有这个字体
         fontStyle = ImageFont.truetype("font/simhei.ttf", 100)
         draw.text((left, top), sim_pred, fill=(255, 0, 0), font=fontStyle)
         # draw.text((left, top), text, text_color, font=fontStyle)
+        detect_reg_text.writelines(boxes_text+','+sim_pred+'\r\n')
         with open(os.path.join(corp_images_dir, os.path.splitext(os.path.basename(corp_image_path))[0]) + "_text.txt",
                   "w") as f:
             f.write(sim_pred)
 
-    line_image.save(os.path.join(line_image_dir, 'res.jpg'))
+    detect_reg_text.close()
+    line_image.save(os.path.join(line_image_dir, 'detect_reg.jpg'))

@@ -54,7 +54,9 @@ export default {
 
       // 发起请求
       httpServer.upload_img(true,formData).then(res=>{
+
         console.log(res)
+        this.$router.push('reg/show')
       })
     }
   },

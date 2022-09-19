@@ -13,23 +13,22 @@ from ctpn.utils.rpn_msr.proposal_layer import proposal_layer
 from ctpn.utils.text_connector.detectors import TextDetector
 
 from config import config
-img_path = config.img_path
 corp_image_path = config.corp_image_path
 gpu = config.gpu
 checkpoint_path = config.checkpoint_path
 write_line_path = config.write_line_path
 
-def get_image_path(image_dir):
-    files = []
-    exts = ['jpg', 'png', 'jpeg', 'JPG']
-    for parent, dirnames, filenames in os.walk(image_dir):
-        for filename in filenames:
-            for ext in exts:
-                if filename.endswith(ext):
-                    files.append(os.path.join(parent, filename))
-                    break
-    print('Find {} images'.format(len(files)))
-    return files
+# def get_image_path(image_dir):
+#     files = []
+#     exts = ['jpg', 'png', 'jpeg', 'JPG']
+#     for parent, dirnames, filenames in os.walk(image_dir):
+#         for filename in filenames:
+#             for ext in exts:
+#                 if filename.endswith(ext):
+#                     files.append(os.path.join(parent, filename))
+#                     break
+#     print('Find {} images'.format(len(files)))
+#     return files
 
 
 def resize_image(img):
@@ -60,7 +59,8 @@ def get_real_bbox(box, rh, rw):
         real_index.append(str(int(y)))
     return ','.join(real_index)
 
-def detect():
+def detect(file_path):
+    corp_image_path = os.path.join(os.path.dirname(file_path), 'corp_image')
     if os.path.exists(corp_image_path):
         shutil.rmtree(corp_image_path)
     os.makedirs(corp_image_path)
@@ -83,7 +83,7 @@ def detect():
             print('Restore from {}'.format(model_path))
             saver.restore(sess, model_path)
 
-            im_fn = get_image_path(img_path)[0]
+            im_fn = file_path
             print('===============')
             print(im_fn)
             start = time.time()
@@ -110,28 +110,21 @@ def detect():
             cost_time = (time.time() - start)
             print("cost time: {:.2f}s".format(cost_time))
 
+            # all_bbox_file = open(os.path.join(os.path.dirname(file_path), "image_all_bbox.txt"), "w")
             for i, box in enumerate(boxes):
                 left = box[0]
                 top = box[1]
                 width = box[2] - box[0]
                 height = box[7] - box[1]
                 crop = img[top:top+height, left:left+width]
-                cop_path = os.path.join(corp_image_path, os.path.splitext(os.path.basename(im_fn))[0])+'_'+str(i)+'.jpg'
+                cop_path = os.path.join(corp_image_path, str(i)+'.jpg')
                 cv2.imwrite(cop_path, crop)
-                with open(os.path.join(corp_image_path, os.path.splitext(os.path.basename(im_fn))[0]) + '_'+str(i)+".txt",
-                          "w") as f:
+                # 单个corp文件
+                with open(os.path.join(corp_image_path, str(i)+".txt"), "w") as f:
                     line = get_real_bbox(box, rh, rw)
                     line += "\r\n"
                     f.writelines(line)
-
                 cv2.polylines(img, [box[:8].astype(np.int32).reshape((-1, 1, 2))], True, color=(0, 255, 0),
                               thickness=2)
             img = cv2.resize(img, None, None, fx=1.0 / rh, fy=1.0 / rw, interpolation=cv2.INTER_LINEAR)
-            cv2.imwrite(os.path.join(write_line_path, os.path.basename(im_fn)), img[:, :, ::-1])
-
-            with open(os.path.join(write_line_path, os.path.splitext(os.path.basename(im_fn))[0]) + ".txt",
-                      "w") as f:
-                for i, box in enumerate(boxes):
-                    line = get_real_bbox(box, rh, rw)
-                    line += "," + str(scores[i]) + "\r\n"
-                    f.writelines(line)
+            cv2.imwrite(os.path.join(os.path.dirname(file_path), 'detect.jpg'), img[:, :, ::-1])
