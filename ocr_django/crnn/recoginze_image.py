@@ -69,7 +69,7 @@ def recognition(file_path):
 
         with open(os.path.join(corp_images_dir, os.path.splitext(os.path.basename(corp_image_path))[0]) + ".txt",
              "r") as f:
-            boxes_text = f.read().replace('\r\n', '')
+            boxes_text = f.read().replace('\r\n', '').replace('\n')
             boxes = boxes_text.split(',')
             left = int(boxes[0])
             top = int(boxes[1])
