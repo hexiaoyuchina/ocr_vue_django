@@ -20,7 +20,7 @@ class RegeViewSets(viewsets.GenericViewSet):
             if 'detect_reg' in file_name or 'detect' in file_name:
                 file_name = 'index' + file_name
 
-            file_dir = os.path.abspath('data/image/' + uuids)
+            file_dir = os.path.abspath('data/' + uuids)
 
             if not os.path.exists(file_dir):
                 os.mkdir(file_dir)

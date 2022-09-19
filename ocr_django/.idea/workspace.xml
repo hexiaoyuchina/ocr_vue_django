@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c5865465-fb9f-4147-b720-be9ea3ac8572" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crnn/recoginze_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/crnn/recoginze_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctpn/detect.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctpn/detect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views/recognize_img.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/recognize_img.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +87,7 @@
       <workItem from="1663123600744" duration="9135000" />
       <workItem from="1663209491494" duration="5093000" />
       <workItem from="1663310639679" duration="2977000" />
-      <workItem from="1663557660443" duration="6199000" />
+      <workItem from="1663557660443" duration="6307000" />
     </task>
     <task id="LOCAL-00001" summary="全局">
       <created>1663125985087</created>
@@ -126,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663569738668</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="bug">
+      <created>1663569847660</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663569847660</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,10 +145,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="bug" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="288" y="0" key="CommitChangelistDialog2" timestamp="1663569734562">
+    <state x="288" y="0" key="CommitChangelistDialog2" timestamp="1663569846330">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="288" y="0" key="CommitChangelistDialog2/200.1080.1304.768/0.0.1858.1080@0.0.1858.1080" timestamp="1663569734562" />
+    <state x="288" y="0" key="CommitChangelistDialog2/200.1080.1304.768/0.0.1858.1080@0.0.1858.1080" timestamp="1663569846330" />
     <state x="298" y="0" key="CommitChangelistDialog2/200.1080.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1663211450737" />
     <state x="412" y="1080" key="CommitChangelistDialog2/200.1080.1366.738/0.0.1920.1050@200.1080.1366.738" timestamp="1663152621303" />
     <state x="689" y="223" key="FileChooserDialogImpl" timestamp="1663037441732">
