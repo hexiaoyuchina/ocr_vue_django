@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+import functools
 import logging
 from django.utils import translation
 from django.conf import settings
@@ -8,8 +9,8 @@ logger = logging.getLogger(__name__)
 
 
 def api_serializer_deco(api_msg):
-
     def _wrapper(func):
+        @functools.wraps(func)
         def deco(*args, **kwargs):
             try:
                 obj = args[0]
