@@ -9,14 +9,7 @@ export default {
             loadingStatus:state
         })
     },
-    get_res_image(state, data){
-        return Fetch({
-            method: 'post',
-            url: '/api/reg_img/show_res/',
-            data:data,
-            loadingStatus:state
-        })
-    },
+
     get_word_index(state,data){
         return Fetch({
             method: 'post',

@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-
+import os
 from ctpn.detect import detect
 from crnn.recoginze_image import recognition
 

@@ -55,7 +55,7 @@ export default {
 
       // 发起请求
       httpServer.upload_img(true,formData).then(res=>{
-
+        console.log(res)
         this.$store.commit('updateFileUuid',res.file_uuid)
         this.$store.commit('updateFileName',res.file_name)
         this.$router.push('/reg/show/')
