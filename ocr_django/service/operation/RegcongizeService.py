@@ -20,16 +20,16 @@ class RegcongizeService(object):
         self.file_uuid = str(uuid.uuid1())
         self.file_name = image_file.name
         if 'detect_reg' in self.file_name or 'detect' in self.file_name:
-            self.file_name = 'index' + file_name
+            self.file_name = 'index' + self.file_name
 
         file_dir = os.path.abspath('static/' + self.file_uuid)
 
         if not os.path.exists(file_dir):
             os.mkdir(file_dir)
 
-        self.file_path = os.path.join(file_dir, file_name)
+        self.file_path = os.path.join(file_dir, self.file_name)
 
-        save_path = open(file_path, 'wb+')
+        save_path = open(self.file_path, 'wb+')
         for chunk in image_file.chunks():
             save_path.write(chunk)
         save_path.close()
