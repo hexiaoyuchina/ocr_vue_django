@@ -5,5 +5,6 @@ from rest_framework import serializers
 class RegImageSerializer(serializers.Serializer):
     file = serializers.ImageField()
 
-class ShowImageSerializer(serializers.Serializer):
+
+class WordIndexSerializer(serializers.Serializer):
     file_uuid = serializers.CharField()

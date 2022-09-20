@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5865465-fb9f-4147-b720-be9ea3ac8572" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ocr_fronted/src/views/reg_img/reg_home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api_serializers/RegimageSerializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_serializers/RegimageSerializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views/recognize_img.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/recognize_img.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_django/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ocr_django/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/operation/RegcongizeService.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/operation/RegcongizeService.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/resource/RegcongizeResource.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/resource/RegcongizeResource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ocr_fronted/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ocr_fronted/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ocr_fronted/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ocr_fronted/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ocr_fronted/src/router/reg.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ocr_fronted/src/router/reg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ocr_fronted/src/service/reg_service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ocr_fronted/src/service/reg_service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ocr_fronted/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ocr_fronted/src/store/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ocr_fronted/src/store/modules/reg_image.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ocr_fronted/src/store/modules/reg_image.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ocr_fronted/src/views/reg_img/ShowImage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../ocr_fronted/src/views/reg_img/ShowImage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ocr_fronted/src/views/reg_img/upload_img.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../ocr_fronted/src/views/reg_img/upload_img.vue" afterDir="false" />
@@ -94,6 +104,7 @@
       <workItem from="1663209491494" duration="5093000" />
       <workItem from="1663310639679" duration="2977000" />
       <workItem from="1663557660443" duration="12751000" />
+      <workItem from="1663678623509" duration="2367000" />
     </task>
     <task id="LOCAL-00001" summary="全局">
       <created>1663125985087</created>

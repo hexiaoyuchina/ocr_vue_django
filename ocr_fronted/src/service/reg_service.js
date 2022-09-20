@@ -12,7 +12,15 @@ export default {
     get_res_image(state, data){
         return Fetch({
             method: 'post',
-            url: '/api/re_img/show_res/',
+            url: '/api/reg_img/show_res/',
+            data:data,
+            loadingStatus:state
+        })
+    },
+    get_word_index(state,data){
+        return Fetch({
+            method: 'post',
+            url: '/api/reg_img/get_word_index/',
             data:data,
             loadingStatus:state
         })

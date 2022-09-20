@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 
 class RegcongizeResource(object):
-    def __init__(self, file_uuid='', *args, **kwargs):
+    def __init__(self, file_uuid='', file_name='', *args, **kwargs):
         self.file_uuid = file_uuid
-
-    def get_res_image(self):
-        return {'message': 'hhh'}
-
+        self.file_name = file_name
+    def get_word_index(self):
+        return {'message':'xxx'}
