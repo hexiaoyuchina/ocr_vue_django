@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 import os
+import uuid
 from ctpn.detect import detect
 from crnn.recoginze_image import recognition
 

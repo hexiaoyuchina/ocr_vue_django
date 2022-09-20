@@ -7,7 +7,7 @@ from service.operation.RegcongizeService import RegcongizeService
 from service.resource.RegcongizeResource import RegcongizeResource
 from api.api_serializers import api_serializer_deco
 from api.api_serializers.RegimageSerializer import WordIndexSerializer,RegImageSerializer
-import uuid
+
 
 class RegeViewSets(viewsets.GenericViewSet):
     @action(methods=['POST'], detail=False, url_path='reg_image', serializer_class=RegImageSerializer)
