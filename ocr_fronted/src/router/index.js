@@ -10,7 +10,7 @@ const routes = [
     regImageRoutes,
     {
       path:'/',
-      redirect:'/reg'
+      redirect:'/reg/'
     }
   ]
 //3.创建路由实例并导出

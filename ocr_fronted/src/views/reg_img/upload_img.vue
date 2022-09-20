@@ -13,6 +13,7 @@
       <el-button size="small" type="primary">点击上传</el-button>
       <div class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
     </el-upload>
+    
 </div>
 </template>
 
@@ -55,9 +56,10 @@ export default {
       // 发起请求
       httpServer.upload_img(true,formData).then(res=>{
 
-        console.log(res.file_uuid)
-        this.$store.reg_img_state.file_uuid = res.file_uuid
-        this.$router.push('reg/show')
+    
+        this.$store.commit('file_uuid',res.file_uuid)
+        console.log(this.$store.getters.get_file_uuid);
+        this.$router.push('/reg/show/')
       })
     }
   },
