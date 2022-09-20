@@ -12,8 +12,7 @@
       name: 'showImage',
         data(){
           return {
-              Image:'',
-              wordIndex: '',
+              wordIndex: [],
               imageUrl:''
           }
         },
@@ -24,7 +23,7 @@
 
         httpServer.get_word_index(true, data).then((res)=>{
             console.log(res)
-
+            this.wordIndex = res
         });
 
         this.imageUrl = 'http://36.111.131.226:8000/static/'+this.$store.getters.getFileUuid+'/'+this.$store.getters.getFileName
