@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5865465-fb9f-4147-b720-be9ea3ac8572" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views/recognize_img.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/recognize_img.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +91,7 @@
       <workItem from="1663209491494" duration="5093000" />
       <workItem from="1663310639679" duration="2977000" />
       <workItem from="1663557660443" duration="12751000" />
-      <workItem from="1663678623509" duration="3167000" />
+      <workItem from="1663678623509" duration="3213000" />
     </task>
     <task id="LOCAL-00001" summary="全局">
       <created>1663125985087</created>
@@ -213,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663681743154</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="优化">
+      <created>1663681798734</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1663681798734</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,10 +245,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="优化" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1663681742688">
+    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1663681798296">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="297" y="0" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1663681742688" />
+    <state x="297" y="0" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1663681798296" />
     <state x="288" y="0" key="CommitChangelistDialog2/200.1080.1304.768/0.0.1858.1080@0.0.1858.1080" timestamp="1663570190762" />
     <state x="402" y="1080" key="CommitChangelistDialog2/200.1080.1304.768/0.0.1858.1080@200.1080.1304.768" timestamp="1663574064891" />
     <state x="298" y="0" key="CommitChangelistDialog2/200.1080.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1663211450737" />
